@@ -82,5 +82,5 @@ energy_choropleth <- gen_choro(energy_sf, "Avg Electricity Use")
 energy_choropleth 
 
 # Save the maps
-ggsave(paste0(path, "Pic 1 Incentive Data.jpg"), plot = incentive_choropleth)
-ggsave(paste0(path, "Pic 2 Energy Data.jpg"), plot = energy_choropleth)
+ggsave(paste0(path, "Pic 1 - Incentive Data.jpg"), plot = incentive_choropleth)
+ggsave(paste0(path, "Pic 2 - Energy Data.jpg"), plot = energy_choropleth)

@@ -5,7 +5,7 @@ library(plotly)
 library(sf)
 library(RColorBrewer)
 
-# Input list for the amount
+# Input list for the amount of incentive
 select.amount <- c("Incentive Amount", "Total Cost", "Ratio")
 all_communities <- neighborhoods <- c(
   "LOGAN SQUARE", "PORTAGE PARK", "WEST LAWN", "WEST RIDGE", 
