@@ -8,7 +8,9 @@ To generate the maps, I constructed a function with a syntax consisting of the d
 
 Online source:
 •	Financial Incentive data: https://data.cityofchicago.org/Community-Economic-Development/Financial-Incentive-Projects-Small-Business-Improv/etqr-sz5x/about_data
+
 •	Energy Benchmarking data: https://data.cityofchicago.org/Environment-Sustainable-Development/Chicago-Energy-Benchmarking/xq83-jr8c/about_data
+
 •	Scale fill gradient: https://ggplot2.tidyverse.org/reference/scale_gradient.html
 
 -----------------------------------------------------------------------------------------------------------------------
@@ -23,4 +25,5 @@ In addition, I add a textInput function where the user can get information about
 
 Internet source:
 •	Okabe and Ito (2008) color palette for color blindness: https://cran.r-project.org/web/packages/ggokabeito/ggokabeito.pdf
+
 •	City of Chicago logo: https://design.chicago.gov/all
