@@ -1,6 +1,16 @@
+###############################################################
+## Title: Data Cleaning - Chicago Incentives
+## Author: Panji Al 'Alam
+## Email: panjialalam@outlook.com
+################################################################
+
 library(tidyverse)
 library(sf)
 library(ggplot2)
+
+##--------------------------------------------------------------
+## Section 1: Data Preparation
+##--------------------------------------------------------------
 
 # Load the data
 path <- "/Users/panjialalam/Documents/GitHub/1.-Spatial-Data-and-Shiny-App/"
@@ -54,6 +64,10 @@ energy <- energy |>
 # Prepare for the maps
 incentive_sf <- st_sf(incentive)
 energy_sf <- st_sf(energy)
+
+##--------------------------------------------------------------
+## Section 2: Set Up The Function
+##--------------------------------------------------------------
 
 # Create a function to generate the choropleth map
 gen_choro <- function(df, variable) {

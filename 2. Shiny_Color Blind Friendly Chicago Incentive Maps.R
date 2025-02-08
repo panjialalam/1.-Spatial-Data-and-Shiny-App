@@ -1,9 +1,19 @@
+###############################################################
+## Title: Shiny - Color Blind Friendly Chicago Incentive Maps
+## Author: Panji Al 'Alam
+## Email: panjialalam@outlook.com
+################################################################
+
 library(tidyverse)
 library(shiny)
 library(shinyFeedback)
 library(plotly)
 library(sf)
 library(RColorBrewer)
+
+##--------------------------------------------------------------
+## Section 1: Set Up The Chicago's Neighborhood
+##--------------------------------------------------------------
 
 # Input list for the amount of incentive
 select.amount <- c("Incentive Amount", "Total Cost", "Ratio")
@@ -29,6 +39,10 @@ all_communities <- neighborhoods <- c(
   "GAGE PARK", "CHICAGO LAWN", "WASHINGTON HEIGHTS", "OHARE", 
   "EDISON PARK"
 )
+
+##--------------------------------------------------------------
+## Section 2: Prepare The Shiny App
+##--------------------------------------------------------------
 
 ui <- fluidPage(
   
@@ -128,5 +142,9 @@ server <- function(input, output) {
   })
   
 }
+
+##--------------------------------------------------------------
+## Section 3: Run The Shiny App
+##--------------------------------------------------------------
 
 shinyApp(ui = ui, server = server)
