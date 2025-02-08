@@ -6,7 +6,8 @@ The first step was to clean the Chicago data sets especially selecting the requi
 
 To generate the maps, I constructed a function with a syntax consisting of the data frame and a specific variable as the basis for generating the gradient colors. The gradient color is based on that one variable put in the function and I utilized the scale_fill_gradient2 function which enables me to put the low, mid, and high colors for lighter and darker colors respectively. As the midpoint of color, I prepared a line of code to calculate the median of the selected variable. Finally, I saved both maps as pictures in my directory in JPEG format.
 
-Online source:
+Online sources:
+
 •	Financial Incentive data: https://data.cityofchicago.org/Community-Economic-Development/Financial-Incentive-Projects-Small-Business-Improv/etqr-sz5x/about_data
 
 •	Energy Benchmarking data: https://data.cityofchicago.org/Environment-Sustainable-Development/Chicago-Energy-Benchmarking/xq83-jr8c/about_data
@@ -23,7 +24,8 @@ In the UI part, I used a radio button to select the type of incentives and a sel
 
 In addition, I add a textInput function where the user can get information about the specific variable’s summary in the other tab. The user must type the correct community area using upper letter (capital) characters and perfectly correct. If it is not correct, the choropleth map of Chicago and the summary will not appear. This will result in a warning message if not correctly typed, for example writing HYDE PARK as HYDEPARK or Hyde Park.
 
-Internet source:
+Internet sources:
+
 •	Okabe and Ito (2008) color palette for color blindness: https://cran.r-project.org/web/packages/ggokabeito/ggokabeito.pdf
 
 •	City of Chicago logo: https://design.chicago.gov/all
